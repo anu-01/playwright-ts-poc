@@ -1,6 +1,6 @@
 import { test as base, expect, Page, Browser, chromium } from '@playwright/test';
 import LoginPage from "../pages/loginPage.ts";
-import { successLoginCredentials, failureLoginCredentials } from '../testdata/creds.ts';   
+import { StandardUser, failureLoginCredentials } from '../testdata/creds.ts';   
 import { log } from 'console';  
 
 base.describe('Login functionality', () => {
@@ -8,7 +8,7 @@ base.describe('Login functionality', () => {
         loginPage: async ({ page }, use) => {
         const loginPage = new LoginPage(page);
         await loginPage.open();
-        await loginPage.login(successLoginCredentials.username, successLoginCredentials.password);
+        await loginPage.login(StandardUser.username, StandardUser.password);
         await loginPage.verifyLogin();
     },
 });
