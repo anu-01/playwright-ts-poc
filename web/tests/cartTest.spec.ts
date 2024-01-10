@@ -39,7 +39,7 @@ test.describe('Cart Functionality for standard user', () => {
         await expect(page.url()).toContain('inventory.html');
     });
 
-    test.afterAll(async ({ page }) => { 
+    test.afterEach(async ({ page }) => { 
         page.close();      
     })
 });
@@ -80,7 +80,7 @@ test.describe('Cart Functionality for visual user', () => {
         await expect(page.url()).toContain('inventory.html');
     });
 
-    test.afterAll(async ({ page }) => { 
+    test.afterEach(async ({ page }) => { 
         page.close();      
     })
 });
