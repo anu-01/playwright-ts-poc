@@ -1,7 +1,8 @@
 import { Page, Locator, expect } from "@playwright/test"
+import { BasePage } from "./basePage.ts"
+import {assertUrl} from "../../utils/assertionHelpers.ts"
 
-export default class CartPage {
-    private page: Page;
+export default class CartPage extends BasePage {
     readonly addproducts: Locator
     readonly removeproducts: Locator
     readonly cart: Locator
@@ -13,10 +14,10 @@ export default class CartPage {
     readonly continueCheckout: Locator
     readonly finishCheckout: Locator 
     readonly continueShoppingButton: Locator
-   
+ 
 
     constructor(page: Page) {
-        this.page = page;
+        super(page)
         this.addproducts = this.page.getByTestId('add-to-cart-sauce-labs-backpack');
         this.removeproducts = this.page.getByTestId('remove-sauce-labs-backpack');
         this.cart = this.page.locator('a').filter({ hasText: '1' });
@@ -46,7 +47,8 @@ export default class CartPage {
 
     async clickCart() {
         await this.cart.click();
-        await expect(this.page.url()).toContain('cart.html');
+        await assertUrl(this.page, 'cart.html');
+        // await expect(this.page.url()).toContain('cart.html');
     }
 
     async validateProductsInCart(ProductName: string) {
@@ -64,7 +66,8 @@ export default class CartPage {
         await this.postalCheckoutDetails.fill('254276');
         await this.continueCheckout.click();
         await this.finishCheckout.click();
-        await expect(this.page.url()).toContain('checkout-complete.html');
+        await assertUrl(this.page, 'checkout-complete.html');
+        // await expect(this.page.url()).toContain('checkout-complete.html');
     }
 
     async continueShopping() {

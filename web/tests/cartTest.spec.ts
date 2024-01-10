@@ -4,17 +4,23 @@ import { successLoginCredentials, failureLoginCredentials } from '../testdata/cr
 import LoginPage from "../pages/loginPage.ts";
 import CartPage from "../pages/cartPage.ts";
 
+
 // test.use({ storageState: 'playwright/.auth/standarduser.json' });
 
 test.describe('Cart Functionality', () => {
-    test('Add product to cart and checkout', async ({ page }) => {
-        const loginPage = new LoginPage(page);
-        console.log(await page.context().cookies());
-        const cartPage = new CartPage(page);
+    let loginPage: LoginPage
+    let cartPage: CartPage
+
+    test.beforeEach(async ({ page }) => {       
+        cartPage = new CartPage(page);
+        loginPage = new LoginPage(page);
         await loginPage.open();
         await loginPage.login(successLoginCredentials.username, successLoginCredentials.password);
-        // await page.goto('/');
-        await page.waitForURL('https://www.saucedemo.com/inventory.html');
+        await loginPage.verifyLogin();
+    })
+
+    test('Add product to cart and checkout', async ({ page }) => { 
+        // await page.goto('/');       
         await page.getByAltText('Products').isVisible();
         await cartPage.addProductToCart('Sauce Labs Backpack');
         await cartPage.clickCart();
@@ -22,20 +28,12 @@ test.describe('Cart Functionality', () => {
         await cartPage.checkout();
     });
     test('Remove product from cart', async ({ page }) => {
-        const loginPage = new LoginPage(page);
-        const cartPage = new CartPage(page);
-        await loginPage.open();
-        await loginPage.login(successLoginCredentials.username, successLoginCredentials.password);
         await cartPage.addProductToCart('Sauce Labs Backpack');
         await cartPage.clickCart();
         await cartPage.removeProductFromCart('Sauce Labs Backpack');
         await cartPage.validateProductsInCartisNot('Sauce Labs Backpack');
     });
     test('Continue shopping', async ({ page }) => {
-        const loginPage = new LoginPage(page);
-        const cartPage = new CartPage(page);
-        await loginPage.open();
-        await loginPage.login(successLoginCredentials.username, successLoginCredentials.password);
         await cartPage.addProductToCart('Sauce Labs Backpack');
         await cartPage.clickCart();
         await cartPage.continueShopping();
