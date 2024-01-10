@@ -10,8 +10,8 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: 'web/tests/',
-  testMatch: 'web/tests/*.spec.ts',
+  testDir: 'api/tests/',
+  testMatch: 'api/tests/*.spec.ts',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -42,7 +42,7 @@ export default defineConfig({
       name: 'chromium',
       use: { 
       ...devices['Desktop Chrome'],
-      //storageState: '.auth/standard_user.json',
+      storageState: 'playwright/.auth/standarduser.json',
       },
       dependencies: ['setup'],
     }
