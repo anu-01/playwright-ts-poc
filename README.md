@@ -24,6 +24,6 @@ Playwright is a framework for Web Testing and Automation. It allows testing [Chr
 
 ### How to write Test
 * Add new spec under `web/tests` folder
-* Name the file as <testname>.spec.ts (e.g. home.spec.js)
-* Create a file for a page under web/pages as <page-name>.ts (e.g. cartPage)
+* Name the file as <testname>.spec.ts (e.g. cart.spec.ts)
+* Create a file for a page under web/pages as <page-name>.ts (e.g. cartPage.ts)
 * Add page objects in the constructor of the class and method implementation for page
