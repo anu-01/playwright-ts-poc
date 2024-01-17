@@ -140,3 +140,39 @@ test('should be able to delete the booking details', async ({ request }) => {
     expect(deleteRequest.status()).toEqual(201);
     expect(deleteRequest.statusText()).toBe('Created');
 });
+
+test('Soft assertion test', async ({ page }) => {
+    const response = await page.request.get(baseUri +"/booking");
+    console.log(await response.json());
+    await expect.soft(response.ok()).toBeTruthy();
+    await expect(response.status()).toBe(200);
+});
+
+test('Custom Polling test', async ({ page }) => {
+    await expect.poll(async () => {
+        const response = await page.request.get(baseUri +'/booking');
+        return response.status();
+    }, {
+        message: 'Response was either not 200 or timeout',
+        intervals: [2_000, 4_000, 10_000],
+        timeout: 60000,
+    }).toBe(200);
+});
+
+test('Expect Retry test', async ({ page }) => {
+    await expect(async () => {
+        const response = await page.request.get(baseUri +'/booking');
+        expect(response.status()).toBe(200);
+    }).toPass();
+});
+
+
+test('Expect Custom Retry test', async ({ page }) => {
+    await expect(async () => {
+        const response = await page.request.get(baseUri +'/booking');
+        expect(response.status()).toBe(200);
+    }).toPass({
+        intervals: [1_000, 2_000, 10_000],
+        timeout: 60_000
+    });
+});
