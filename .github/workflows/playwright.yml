@@ -18,7 +18,7 @@ jobs:
       run: PLAYWRIGHT_JUNIT_OUTPUT_NAME=results.xml npx playwright test --reporter=junit
       shell: bash
     - name: Test Summary
-    - uses: test-summary/action@v2
+      uses: test-summary/action@v2
       with:
         paths: |
           results.xml
