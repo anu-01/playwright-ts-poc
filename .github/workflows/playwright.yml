@@ -25,3 +25,8 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+
+    - name: step summary
+      run: |
+       ' SUMMARY= $# Testing Job Summary\n## Second Level Heading\nHello GitHub'
+       echo "$SUMMARY" >> $GITHUB_STEP_SUMMARY
