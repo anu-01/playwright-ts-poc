@@ -27,8 +27,9 @@ jobs:
         retention-days: 30          
     - uses: actions/download-artifact@v4
       with:
-         path: playwright-report/
          name: playwright-report
+    - name: Display structure of downloaded files
+      run: ls -R
     - name: step summary
       run: |
        cat playwright-report/index.html >> $GITHUB_STEP_SUMMARY
