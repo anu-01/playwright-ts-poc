@@ -1,7 +1,7 @@
 import { test as base } from '@playwright/test';
 import LoginPage from '../pages/loginPage.ts';
 import CartPage from '../pages/cartPage.ts';
-import { successLoginCredentials } from '../testdata/creds.ts';
+import { StandardUser } from '../testdata/creds.ts';
 import { log } from 'console';
 
 // Declare the types of your fixtures.
@@ -15,7 +15,7 @@ export const test = base.extend<MyFixtures>({
       // Set up the fixture.
       const loginPage = new LoginPage(page);
       await loginPage.open();
-      await loginPage.login(successLoginCredentials.username, successLoginCredentials.password);
+      await loginPage.login(StandardUser.username, StandardUser.password);
       await loginPage.verifyLogin();
   
       // Use the fixture value in the test.
@@ -26,5 +26,6 @@ export const test = base.extend<MyFixtures>({
       await use(new CartPage(page));
     },
   });
+  export default test;
   export { expect } from '@playwright/test';
   
