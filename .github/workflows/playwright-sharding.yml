@@ -33,7 +33,10 @@ jobs:
         name: blob-report-${{ matrix.shardIndex }}
         path: blob-report
         retention-days: 1
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72ad663be0b9fa876ce3e51d0cc4558a94cd686e
   merge-reports:
      # Merge reports after playwright-tests, even if some shards have failed
      if: always()
