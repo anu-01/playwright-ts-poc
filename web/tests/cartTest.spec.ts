@@ -40,7 +40,7 @@ test.describe('Cart Functionality for standard user', () => {
     });
 
     test.afterEach(async ({ page }) => { 
-        page.close();      
+        // page.close();      
     })
 });
 
