@@ -6,3 +6,5 @@ node_modules/
 \nplaywright/.auth
 
 playwright/.auth
+playwright/.auth/standarduser.json
+playwright/.auth/visualuser.json
