@@ -131,7 +131,7 @@ test('should be able to delete the booking details', async ({ request }) => {
     console.log("New Token is: " + token);
 
     // DELETE
-    const deleteRequest = await request.delete(baseUri +'/booking/7', {
+    const deleteRequest = await request.delete(baseUri +'/booking/1857', {
         headers: {
         'Content-Type': 'application/json',
         'Cookie': `token=${token}`,
