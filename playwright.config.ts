@@ -10,7 +10,8 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: 'web/tests',
+  testDir: '.', 
+  //testDir: 'api' or 'web' or '.'
   // testMatch: '*/tests/*.spec.ts',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -21,12 +22,21 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  // reporter: 'html',
-  reporter: process.env.CI ? 'blob' : 'html',
+  reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'https://www.saucedemo.com/',
+
+    extraHTTPHeaders: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      // We set this header per GitHub guidelines.
+      // 'Accept': 'application/vnd.github.v3+json',
+      // Add authorization token to all requests.
+      // Assuming personal access token available in the environment.
+      // 'Authorization': `token ${process.env.API_TOKEN}`,
+    }, 
    // storageState: '.auth/standard_user.json',
     testIdAttribute: 'data-test',
 
@@ -40,13 +50,26 @@ export default defineConfig({
     { name: 'setup', testMatch: /.*\.setup\.ts/ },
 
     {
-      name: 'chromium',
+      name: 'webTests',
+      testDir:'web/tests',
       use: { 
       ...devices['Desktop Chrome'],
       storageState: 'playwright/.auth/standarduser.json',
+      screenshot: "only-on-failure",
+      video: "retain-on-failure",
       },
       dependencies: ['setup'],
-    }
+    },
+
+    {
+      name: 'apiTests',
+      testDir: 'api/tests',
+      use: {
+      baseURL:'https://restful-booker.herokuapp.com',
+      ...devices['Desktop Chrome'],
+      headless: true,
+    },
+    },
 
     // {
     //   name: 'firefox',
