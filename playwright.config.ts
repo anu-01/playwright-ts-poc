@@ -60,7 +60,18 @@ export default defineConfig({
       },
       dependencies: ['setup'],
     },
-
+    {
+      name: 'mobileEmulationTests',
+      testDir:'web/tests',
+      use: { 
+      ...devices['iPhone 13'],
+      locale: 'en-GB',
+      timezoneId: 'Europe/London',
+      storageState: 'playwright/.auth/standarduser.json',
+      screenshot: "only-on-failure",
+      video: "retain-on-failure",
+      },  
+    },
     {
       name: 'apiTests',
       testDir: 'api/tests',
