@@ -54,6 +54,9 @@ export default defineConfig({
       testDir:'web/tests',
       use: { 
       ...devices['Desktop Chrome'],
+      viewport: null,
+      deviceScaleFactor: undefined,
+      launchOptions: {       args: ['--start-maximized','--disable-popup-blocking']  },
       storageState: 'playwright/.auth/standarduser.json',
       screenshot: "only-on-failure",
       video: "retain-on-failure",
