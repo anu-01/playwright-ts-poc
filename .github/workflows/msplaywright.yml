@@ -22,11 +22,11 @@ jobs:
             enable-AzPSSession: true
 
         - name: Install dependencies
-          working-directory: path/to/playwright/folder # update accordingly
+          working-directory: . # update accordingly
           run: npm ci
 
         - name: Run Playwright tests
-          working-directory: path/to/playwright/folder # update accordingly
+          working-directory: . # update accordingly
           env:
             # Regional endpoint for Microsoft Playwright Testing
             PLAYWRIGHT_SERVICE_URL: ${{ secrets.PLAYWRIGHT_SERVICE_URL }}
