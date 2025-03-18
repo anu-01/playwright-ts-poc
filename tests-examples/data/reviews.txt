@@ -1,0 +1,43 @@
+Should leave a product review
+Should leave a product review with a rating
+Should leave a product review with text
+Should leave a product review with images
+Should leave a product review with video
+Should leave a product review with emojis
+Should leave a product review with HTML tags
+Should edit a product review
+Should edit a product review to change the rating
+Should edit a product review to update the text
+Should edit a product review to add more images
+Should edit a product review to add video content
+Should edit a product review to include emojis
+Should edit a product review to modify HTML tags
+Should delete a product review
+Should delete a product review with confirmation
+Should delete a product review without confirmation
+Should delete another user's product review
+Should delete another user's product review with confirmation
+Should not delete another user's product review without confirmation
+Should reply to a product review
+Should reply to a product review with text
+Should reply to a product review with images
+Should reply to a product review with video
+Should reply to a product review with emojis
+Should reply to a product review with HTML tags
+Should flag a product review as inappropriate
+Should flag a product review as spam
+Should flag a product review as abusive
+Should flag a product review with an explanation
+Should report a product review for moderation
+Should report a product review with a reason
+Should report a product review with comments
+Should report a product review for removal
+Should report a product review with false information
+Should display product reviews on the product page
+Should display product reviews with the most helpful first
+Should display product reviews with the highest rating first
+Should display product reviews with the lowest rating first
+Should display product reviews with the most recent first
+Should display product reviews with pagination
+Should display a message when there are no product reviews
+Should display the average rating for a product

@@ -1,0 +1,38 @@
+Should sign-in user
+Should sign-in user with valid credentials
+Should show error on invalid signin
+Should show error on missing username
+Should show error on missing password
+Should sign-in user with expired credentials
+Should sign-in user with locked account
+Should sign-in user with disabled account
+Should sign-in user with special characters in username
+Should sign-in user with special characters in password
+Should show error on empty username
+Should show error on empty password
+Should show error on empty captcha
+Should sign-in user with uppercase letters in username
+Should sign-in user with lowercase letters in username
+Should sign-in user with mixed case in username
+Should sign-in user with uppercase letters in password
+Should sign-in user with lowercase letters in password
+Should sign-in user with mixed case in password
+Should sign-in user with minimum username length
+Should sign-in user with maximum username length
+Should sign-in user with minimum password length
+Should sign-in user with maximum password length
+Should sign-in user with valid email as username
+Should sign-in user with invalid email as username
+Should sign-in user with missing email as username
+Should sign-in user with missing email as password
+Should sign-in user with valid social media credentials
+Should sign-in user with invalid social media credentials
+Should sign-in user with empty social media credentials
+Should sign-in user with two-factor authentication
+Should sign-in user with multifactor authentication
+Should sign-in user with time-limited access
+Should sign-in user with role-based access
+Should sign-in user with permission-based access
+Should sign-in user with IP-based access control
+Should sign-in user with geolocation-based access control
+Should sign-in user with security token

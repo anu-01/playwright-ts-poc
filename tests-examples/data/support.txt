@@ -1,0 +1,41 @@
+Should open support chat window
+Should close support chat window
+Should minimize support chat window
+Should maximize support chat window
+Should start chat session
+Should end chat session
+Should send message to support assistant
+Should receive message from support assistant
+Should show typing indicator from support assistant
+Should show user typing indicator to support assistant
+Should show waiting for support assistant
+Should show estimated wait time
+Should provide chat history with previous messages
+Should clear chat history
+Should allow user to attach files in chat
+Should display attached files in chat
+Should allow user to send emojis in chat
+Should allow user to send links in chat
+Should display links as clickable in chat
+Should allow user to send code snippets in chat
+Should format code snippets in chat
+Should show support assistant's name and avatar
+Should show support assistant's status
+Should show support assistant's bio or description
+Should allow user to rate support assistant
+Should show user's rating for support assistant
+Should allow user to leave feedback
+Should allow user to request a transcript of the chat
+Should display transcript request confirmation
+Should allow user to exit chat gracefully
+Should allow user to continue chat after exiting
+Should show chat notifications for new messages
+Should show chat notifications for support assistant availability
+Should allow user to block support assistant
+Should allow user to unblock support assistant
+Should show blocked status for support assistant
+Should allow user to report inappropriate behavior
+Should show confirmation for reporting
+Should allow user to cancel report
+Should show blocked status for reported support assistant
+Should allow user to request a supervisor

@@ -1,0 +1,119 @@
+Should show products
+Should show products for registered users
+Should show products for anonymous users
+Should filter products
+Should filter products by category
+Should filter products by price range
+Should filter products by availability
+Should filter products by brand
+Should filter products by rating
+Should filter products by popularity
+Should add item to shopping cart
+Should add item to shopping cart with quantity 1
+Should add item to shopping cart with quantity 10
+Should add item to shopping cart with maximum quantity
+Should remove item from shopping cart
+Should remove item from shopping cart with one item
+Should remove item from shopping cart with multiple items
+Should update item quantity in shopping cart
+Should update item quantity to 0 in shopping cart
+Should update item quantity to maximum in shopping cart
+Should display empty cart message when no items
+Should calculate total price correctly in cart
+Should calculate total price with multiple items
+Should calculate total price with discounts
+Should navigate to product details page
+Should display product images correctly
+Should allow user to sign out
+Should display user profile information
+Should display user profile information for admin
+Should display user profile information for different users
+Should display user profile information for anonymous users
+Should process checkout successfully
+Should process checkout with single item
+Should process checkout with multiple items
+Should process checkout with different shipping methods
+Should process checkout with different payment methods
+Should process checkout with billing address
+Should process checkout with shipping address
+Should display error for out-of-stock items at checkout
+Should display error for out-of-stock items in cart
+Should save user address information
+Should save user address information for billing
+Should save user address information for shipping
+Should validate user payment method
+Should show order confirmation after checkout
+Should show order details after checkout
+Should show order history
+Should show order history with multiple orders
+Should show order history for different users
+Should show order history for anonymous users
+Should update product catalog dynamically
+Should update product catalog with new arrivals
+Should update product catalog with out-of-stock items
+Should update product catalog with discounts
+Should handle multiple users in cart simultaneously
+Should prevent simultaneous updates to cart
+Should provide search functionality for products
+Should provide search functionality with empty query
+Should provide search functionality with special characters
+Should provide search functionality for non-existing products
+Should provide search functionality for misspelled products
+Should provide search functionality for long queries
+Should display product reviews and ratings
+Should allow users to add reviews
+Should allow users to add reviews with text
+Should allow users to add reviews with ratings
+Should allow users to add reviews with images
+Should allow users to edit reviews
+Should allow users to delete reviews
+Should handle invalid product search gracefully
+Should allow sorting products by price
+Should allow sorting products by popularity
+Should allow sorting products by rating
+Should allow sorting products by brand
+Should allow sorting products by name
+Should offer category filters for products
+Should offer category filters for multiple categories
+Should offer category filters for subcategories
+Should preserve cart items after user logs out and in again
+Should show recommended products
+Should allow users to compare products
+Should provide detailed product descriptions
+Should provide detailed product descriptions with HTML
+Should handle payment processing errors
+Should display breadcrumbs for navigation
+Should offer discounts at checkout when applicable
+Should send email confirmation after order placement
+Should enforce password strength on account creation
+Should require minimum password length
+Should require at least one uppercase letter in password
+Should require at least one lowercase letter in password
+Should require at least one digit in password
+Should require at least one special character in password
+Should provide password reset functionality
+Should allow password reset with valid email
+Should show error on password reset with invalid email
+Should show success message after password reset request
+Should show error after multiple password reset requests
+Should display a mobile-responsive site layout
+Should support pagination in product catalog
+Should allow users to navigate to next page
+Should allow users to navigate to previous page
+Should allow users to navigate to last page
+Should allow users to navigate to first page
+Should show loading indicators for slow network responses
+Should handle session timeouts
+Should validate user input in checkout forms
+Should validate user input for shipping address
+Should validate user input for billing address
+Should validate user input for payment method
+Should allow users to cancel orders within a time limit
+Should offer customer support chat functionality
+Should maintain user session across different pages
+Should allow wishlist creation and management
+Should allow users to add items to wishlist
+Should allow users to remove items from wishlist
+Should display wishlist items on user profile
+Should display wishlist items on product pages
+Should display a 404 page for non-existent products

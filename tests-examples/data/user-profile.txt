@@ -1,0 +1,47 @@
+Should view user profile
+Should edit user profile
+Should update user profile with valid data
+Should update user profile with invalid data
+Should update user profile picture
+Should update user profile picture with invalid format
+Should update user profile picture with oversized image
+Should update user profile picture with undersized image
+Should change user password
+Should change user password with valid current password
+Should change user password with invalid current password
+Should change user password with weak new password
+Should change user password with strong new password
+Should change user email address
+Should change user email address with valid new email
+Should change user email address with invalid new email
+Should change user email address with existing email
+Should link social media accounts
+Should unlink social media accounts
+Should set communication preferences
+Should update communication preferences with valid data
+Should update communication preferences with invalid data
+Should opt-in for email notifications
+Should opt-out of email notifications
+Should opt-in for SMS notifications
+Should opt-out of SMS notifications
+Should opt-in for push notifications
+Should opt-out of push notifications
+Should delete user account
+Should delete user account with valid credentials
+Should not delete user account with invalid credentials
+Should not view another user's profile
+Should not edit another user's profile
+Should not change another user's password
+Should not change another user's email address
+Should not link social media accounts of another user
+Should not unlink social media accounts of another user
+Should not set communication preferences for another user
+Should not delete another user's account
+Should not view user profile when logged out
+Should not edit user profile when logged out
+Should not change user password when logged out
+Should not change user email address when logged out
+Should not link social media accounts when logged out
+Should not unlink social media accounts when logged out
+Should not set communication preferences when logged out
+Should not delete user account when logged out

@@ -58,6 +58,33 @@ export default defineConfig({
     { name: 'setup', testMatch: /.*\.setup\.ts/ },
 
     {
+      name: 'exampleTests-Chrome',
+      testDir: 'tests-examples/tests',
+      use: {
+        ...devices['Desktop Chrome'],
+        headless: true,
+      },
+    },
+
+    {
+      name: 'exampleTests-Firefox',
+      testDir: 'tests-examples/tests',
+      use: {
+        ...devices['Desktop Firefox'],
+        headless: true,
+      },
+    },
+
+    {
+      name: 'exampleTests-Pixel5',
+      testDir: 'tests-examples/tests',
+      use: {
+        ...devices['Pixel 5'],
+        headless: true,
+      },
+    },
+
+    {
       name: 'webTests',
       testDir:'web/tests',
       use: { 
@@ -93,11 +120,11 @@ export default defineConfig({
     },
     },
 
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
-
+  //  {
+  //     name: 'firefox',
+  //     use: { ...devices['Desktop Firefox'] },
+  //   },
+ 
     // {
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },

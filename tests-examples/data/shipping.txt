@@ -1,0 +1,37 @@
+Should calculate shipping cost
+Should calculate shipping cost for free shipping
+Should calculate shipping cost for express shipping
+Should calculate shipping cost for international shipping
+Should calculate shipping cost for oversized items
+Should calculate shipping cost for multiple items
+Should calculate shipping cost for remote locations
+Should calculate shipping cost for a different destination
+Should offer free shipping for orders over a certain amount
+Should offer free shipping for specific product categories
+Should offer free shipping for loyalty program members
+Should apply shipping discounts for promotions
+Should apply shipping discounts for coupons
+Should apply shipping discounts for special events
+Should allow users to select shipping method
+Should display estimated delivery time
+Should show available shipping options
+Should show shipping restrictions for specific regions
+Should show shipping restrictions for hazardous items
+Should show shipping restrictions for oversized items
+Should allow users to add delivery notes
+Should show shipping tracking information
+Should provide real-time tracking updates
+Should handle delayed shipments
+Should handle lost shipments
+Should handle damaged shipments
+Should handle stolen shipments
+Should allow users to request a return
+Should handle return requests for damaged items
+Should handle return requests for incorrect items
+Should handle return requests for unwanted items
+Should provide return shipping labels
+Should display return status and updates
+Should refund shipping fees for returned items
+Should handle international customs and duties
+Should calculate customs and duties for international orders
+Should provide customs and duties information to customers

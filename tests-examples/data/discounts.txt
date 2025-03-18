@@ -1,0 +1,17 @@
+Should apply discount
+Should apply coupon
+Should apply percentage discount
+Should apply fixed amount discount
+Should apply discount to multiple items
+Should apply coupon to specific product categories
+Should apply coupon to specific brands
+Should apply coupon with minimum purchase amount
+Should apply coupon with maximum discount limit
+Should apply coupon with expired validity
+Should apply coupon with future validity
+Should apply coupon with invalid characters
+Should apply coupon with case-insensitive code
+Should not apply expired coupon
+Should not apply invalid coupon code
+Should not apply coupon to excluded products
+Should not apply coupon to restricted user roles

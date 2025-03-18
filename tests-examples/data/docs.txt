@@ -1,0 +1,21 @@
+Should open help center
+Should open help center with different languages
+Should open help center with slow network
+Should open help center with JavaScript disabled
+Should open help center with cookies disabled
+Should search for help topics
+Should search for help topics with empty query
+Should search for help topics with special characters
+Should search for help topics with no results
+Should search for help topics with multiple results
+Should open a specific help topic
+Should open a specific help topic with different languages
+Should open a specific help topic with deep linking
+Should open a specific help topic with invalid URL
+Should open a specific help topic with invalid anchor
+Should open a specific help topic with scroll position preservation
+Should open a specific help topic with back button functionality
+Should open a specific help topic with breadcrumbs
+Should open a specific help topic with related articles
+Should open a specific help topic with suggested topics
+Should not open a non-existent help topic
