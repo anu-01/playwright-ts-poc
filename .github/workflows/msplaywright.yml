@@ -31,10 +31,10 @@ jobs:
             # Regional endpoint for Microsoft Playwright Testing
             PLAYWRIGHT_SERVICE_URL: ${{ secrets.PLAYWRIGHT_SERVICE_URL }}
             # PLAYWRIGHT_SERVICE_ACCESS_TOKEN: ${{ secrets.PLAYWRIGHT_SERVICE_ACCESS_TOKEN }} # Not recommended, use Microsoft Entra ID authentication. 
-          run: npx playwright test -c playwright.service.config.ts --workers=20
+          run: npx playwright test -c playwright.service.config.ts --workers=40
 
         - name: Upload Playwright report
-          uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v4
           if: always()
           with:
             name: playwright-report
