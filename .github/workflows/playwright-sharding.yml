@@ -1,9 +1,7 @@
 name: Playwright Tests Sharding
 on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+  workflow_dispatch:
+  
 jobs:
   playwright-tests:
     timeout-minutes: 60
