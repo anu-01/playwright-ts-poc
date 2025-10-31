@@ -3,5 +3,5 @@
 - DO NOT generate test code based on the scenario alone. 
 - DO run steps one by one using the tools provided by the Playwright MCP.
 - Only after all steps are completed, emit a Playwright TypeScript test that uses @playwright/test based on message history
-- Save generated test file in the tests directory
+- Save generated test file in the web/tests directory
 - Execute the test file and iterate until the test passes
