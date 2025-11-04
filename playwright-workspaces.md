@@ -1,7 +1,23 @@
 # Set up continuous end-to-end testing with Playwright Workspaces
 
 This guide explains how to set up **Playwright Workspaces** for continuous end-to-end testing on the **TypeScript Playwright project** (`playwright-ts-poc`).  
----
+
+
+## Overview  
+
+**[Playwright Workspaces](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces)** is a fully managed Azure service for **end-to-end web testing** with browsers hosted across Windows and Linux environments.
+
+- ⚡ **Accelerate test execution** by running tests in **parallel across managed remote browsers**, leveraging Azure’s cloud-scale infrastructure.  
+- 🌍 **Ensure consistent cross-browser testing** across **Chromium, Firefox, and WebKit** without needing to modify your existing Playwright test code.  
+- 🔒 **Test public and private applications securely** using cloud-hosted browsers — no inbound firewall rules or on-premise browser infrastructure required.  
+- ☁️ **Integrate seamlessly with CI/CD pipelines** (e.g., GitHub Actions, Azure DevOps) to automate your Playwright tests in the cloud.  
+- 📊 **Monitor test health and performance** through built-in dashboards and logs in the Azure portal.  
+
+For more details, see the official Microsoft guide:  
+👉 [What is Microsoft Playwright Workspaces?](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces)
+
+🎁 Free Trial
+Try Playwright Workspaces for free for 30 days with total test minutes of 100. Vist [here](https://azure.microsoft.com/en-us/pricing/details/app-testing/)
 
 ##  Prerequisites
 
