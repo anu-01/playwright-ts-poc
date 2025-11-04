@@ -20,20 +20,6 @@ This repository (`playwright-ts-poc`) demonstrates how to build a scalable and m
 
 ---
 
-## 🧠 What are Playwright Workspaces?
-
-**[Playwright Workspaces](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces)** is a fully managed Azure service for **end-to-end web testing**.  
-It allows you to:
-- ⚡ Run tests in parallel on **cloud-hosted browsers** (Windows & Linux)  
-- 🌍 Test across **Chromium, Firefox, and WebKit** using your existing test code  
-- 🔒 Securely test both **public and private apps** — no inbound firewall rules needed  
-- 🔁 Integrate seamlessly with **GitHub Actions** or **Azure DevOps** for CI/CD automation  
-- 💰 Start free — Playwright Workspaces includes a **30-day free trial** for new Azure users  
-
-For setup instructions, see the [Setup Guide for Playwright Workspaces](./playwright-workspaces.md).  
-
----
-
 ## 🧰 Getting Started
 
 ### ✅ Prerequisites
@@ -59,8 +45,8 @@ npx playwright test
 # 4. Generate test report
 npx playwright show-report
 ```
-
-🧪 Writing Tests
+---
+### 🧪 Writing Tests
 
 - Add new test files under:
   web/tests/<test-name>.spec.ts
@@ -72,3 +58,18 @@ npx playwright show-report
 
 Each page should define selectors and reusable methods that represent user interactions.
 
+
+---
+## 🧠 What are Playwright Workspaces?
+
+**[Playwright Workspaces](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces)** is a fully managed Azure service for **end-to-end web testing**.  
+It allows you to:
+- ⚡ Run tests in parallel on **cloud-hosted browsers** (Windows & Linux)  
+- 🌍 Test across **Chromium, Firefox, and WebKit** using your existing test code  
+- 🔒 Securely test both **public and private apps** — no inbound firewall rules needed  
+- 🔁 Integrate seamlessly with **GitHub Actions** or **Azure DevOps** for CI/CD automation  
+- 💰 Start free — Playwright Workspaces includes a **30-day free trial** for new Azure users  
+
+For setup instructions, see the [Setup Guide for Playwright Workspaces](./playwright-workspaces.md).  
+
+---
