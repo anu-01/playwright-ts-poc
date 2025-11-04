@@ -53,7 +53,7 @@ Before you begin, make sure you have:
    "devDependencies": {
      "@azure/playwright": "latest"
    }
-```
+    ```
 
 ## Step 2: Setup Microsoft Entra ID Authentication
 Playwright Workspaces uses Microsoft Entra ID for secure authentication.
@@ -91,4 +91,5 @@ In your GitHub repo, go to Settings → Secrets and variables → Actions → Ne
 Once setup is complete:
 
 Configure your GitHub Actions workflow to run Playwright tests automatically.
-[Example CI workflow] (.github\workflows\msplaywright.yml)
+
+[Example CI workflow](.github/workflows/msplaywright.yml)
