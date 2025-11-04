@@ -16,8 +16,7 @@ This guide explains how to set up **Playwright Workspaces** for continuous end-t
 For more details, see the official Microsoft guide:  
 👉 [What is Microsoft Playwright Workspaces?](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces)
 
-🎁 Free Trial
-Try Playwright Workspaces for free for 30 days with total test minutes of 100. Vist [here](https://azure.microsoft.com/en-us/pricing/details/app-testing/)
+🎁 Try Playwright Workspaces today for free for 30 days with total test minutes of 100. Vist [here](https://azure.microsoft.com/en-us/pricing/details/app-testing/)
 
 ##  Prerequisites
 
