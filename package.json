@@ -16,9 +16,9 @@
   },
   "homepage": "https://github.com/anu-01/playwright-poc-ts#readme",
   "devDependencies": {
-    "@azure/identity": "^4.11.1",
+    "@azure/identity": "^4.13.0",
     "@azure/microsoft-playwright-testing": "^1.0.0-beta.7",
-    "@azure/playwright": "^1.0.0",
+    "@azure/playwright": "latest",
     "@playwright/test": "^1.56.0",
     "@types/node": "^20.10.5",
     "dotenv": "^16.4.3"
