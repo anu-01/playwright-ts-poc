@@ -16,7 +16,7 @@ This repository (`playwright-ts-poc`) demonstrates how to build a scalable and m
 - 👥 **[Multi-user Authentication](https://playwright.dev/docs/auth)** — test real-world user flows across multiple identities  
 - 🌐 **[API Testing Support](https://playwright.dev/docs/api-testing)** — extend beyond UI and test APIs directly within Playwright
 - ☁️ **[CI Integration](https://playwright.dev/docs/ci-intro)** — integrate with Github Action workflow or Azure pipelines
-- ☁️ **[Azure Playwright Workspaces Integration](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces)** — run Playwright tests in the cloud across multiple OS and browsers with no local setup  
+- ☁️ **[Playwright Workspaces Integration](https://learn.microsoft.com/en-us/azure/app-testing/playwright-workspaces/overview-what-is-microsoft-playwright-workspaces)** — run Playwright tests in the cloud across multiple OS and browsers with no local setup  
 
 ---
 
